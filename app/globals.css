@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.container-controls,
+.container-code {
+  width: calc(50% - 2rem);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+
+  position: sticky;
+  top: 0;
+}
+
+.container-controls {
+  position: relative;
+  z-index: 9999;
+}
